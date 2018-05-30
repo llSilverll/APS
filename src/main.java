@@ -144,12 +144,12 @@ public class main {
 				
 			case "10":
 					System.out.print("Digite o codigo: ");
-				int codgo = -1837593, quanti = -1;
-				while (codgo == -1837593) {
+				int _codgo = -1837593, _quanti = -1;
+				while (_codgo == -1837593) {
 					try {
 						reader = new Scanner(System.in);
 						subC = reader.nextLine();
-						codgo =  Integer.parseInt(subC);
+						_codgo =  Integer.parseInt(subC);
 					}
 					catch (Exception e) {
 						System.out.println("Digitar um numero!!");
@@ -157,18 +157,18 @@ public class main {
 				}
 				
 				System.out.print("Digite a quantidade: ");
-				while (quanti == -1) {
+				while (_quanti == -1) {
 					try {
 						reader = new Scanner(System.in);
 						subC = reader.nextLine();
-						codgo =  Integer.parseInt(subC);
+						_quanti =  Integer.parseInt(subC);
 					}
 					catch (Exception e) {
 						System.out.println("Digitar um numero!!");
 					}
 				}
 				
-				gerProd.venderProduto(codgo, quanti);
+				gerProd.venderProduto(_codgo, _quanti);
 				break;
 			}
 			
