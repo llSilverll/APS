@@ -143,6 +143,32 @@ public class main {
 				break;
 				
 			case "10":
+					System.out.print("Digite o codigo: ");
+				int codgo = -1837593, quanti = -1;
+				while (codgo == -1837593) {
+					try {
+						reader = new Scanner(System.in);
+						subC = reader.nextLine();
+						codgo =  Integer.parseInt(subC);
+					}
+					catch (Exception e) {
+						System.out.println("Digitar um numero!!");
+					}
+				}
+				
+				System.out.print("Digite a quantidade: ");
+				while (quanti == -1) {
+					try {
+						reader = new Scanner(System.in);
+						subC = reader.nextLine();
+						codgo =  Integer.parseInt(subC);
+					}
+					catch (Exception e) {
+						System.out.println("Digitar um numero!!");
+					}
+				}
+				
+				gerProd.venderProduto(codgo, quanti);
 				break;
 			}
 			
