@@ -27,7 +27,7 @@ public class main {
 		
 		String command = "", subC = "";
 		
-		while (command != "0" || command != "00") {
+		while (command != "0" && command != "00") {
 			command = reader.nextLine();
 			
 			switch (command) {
